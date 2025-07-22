@@ -1,12 +1,12 @@
 # BillBuster 💸 – Monthly Expense Tracker
 
-**BillBuster** is a financial analytics dashboard built in Power BI. It helps users or FinTech teams track monthly spending, spot overspending areas, and plan budgets effectively.
+**BillBuster** is a smart financial analytics dashboard built in Power BI. It helps individuals and FinTech companies monitor spending patterns, optimize budgeting, and identify saving opportunities.
 
 ---
 
 ## 📊 Objective
 
-To provide clear insights into how users spend money across various categories, track trends over time, and optimize financial decision-making.
+To visualize and analyze monthly expenses across various categories, helping users or companies control overspending and gain insight into daily expense habits.
 
 ---
 
@@ -17,30 +17,22 @@ Excel File: `MonthlyExpenses.xlsx`
 | Column       | Description                               |
 |--------------|-------------------------------------------|
 | Date         | Date of transaction                       |
-| Category     | Expense type (Food, Rent, Utilities, etc) |
-| Amount       | Expense amount in INR                     |
-| Payment Mode | UPI, Cash, Credit Card, etc.              |
-| Month        | Month of transaction                      |
+| Category     | Expense type (e.g., Food, Rent, etc.)     |
+| Amount       | Amount spent in INR                       |
+| Payment Mode | Mode of payment (UPI, Cash, Card, etc.)   |
+| Month        | Month of the transaction                  |
 
 ---
 
-## 📈 Visuals Used
+## 📈 Dashboard Visuals
 
-- **Donut Chart** – Category-wise Spending
-- **Bar Chart** – Payment Method Breakdown
-- **Line Chart** – Daily Expense Trend
-- **Card** – Total Expenses
-- **Card (DAX)** – Avg Daily Spend
-- **Table** – Expense Log
-- **Slicer** – Category or Payment Mode
-
----
-
-## 🧠 DAX Measure
-
-```DAX
-Avg Daily Spend = 
-AVERAGEX(VALUES(MonthlyExpenses[Date]), CALCULATE(SUM(MonthlyExpenses[Amount])))
+- 🧾 **Total Spend** (Card)
+- 📊 **Average Daily Spend** (DAX Measure)
+- 🍩 **Donut Chart** – Spending by Category
+- 📊 **Bar Chart** – Payment Method Breakdown
+- 📈 **Line Chart** – Daily Expense Trend
+- 📋 **Table** – Complete Expense Log
+- 🎛️ **Slicer** – Filter by Category or Payment Mode
 
 ---
 
@@ -52,22 +44,22 @@ AVERAGEX(VALUES(MonthlyExpenses[Date]), CALCULATE(SUM(MonthlyExpenses[Amount])))
 
 📁 Files Included
 
-MonthlyExpenses.xlsx – Source data
+MonthlyExpenses.xlsx – Source Data
 
-Diya 5.pbix – Power BI dashboard
+Diya 5.pbix – Power BI Dashboard File
 
-billbuster-preview.png – Screenshot
+billbuster-preview.png – Dashboard Screenshot
 
-README.md – Project info
-
----
-
-🛠️ Tools Used
-
-Microsoft Power BI Desktop
-
-Excel
+README.md – Project Documentation
 
 ---
 
-Built by Santhiya Diya to showcase financial analytics skills using Power BI 🚀
+🛠 Tools & Technologies
+
+Microsoft Power BI
+
+Microsoft Excel
+
+---
+
+Designed and developed by Santhiya – empowering analytics through simple yet effective dashboards 🚀
